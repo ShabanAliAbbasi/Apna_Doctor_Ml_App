@@ -20,31 +20,31 @@ st.set_page_config(
 
 
 multiple_disease_model = pickle.load(open(
-    'C:\\Users\\Shoban\\Desktop\\Virtual_Doctor_Project\\Data_about_deseases\\Heart_data\\Save models\\multiple_disease_prediction.sav',
+    'multiple_disease_prediction.sav',
     'rb'))
 
 
 # diabetes_model = pickle.load(open('C:\Users\Shoban\Desktop\Virtual_Doctor_Project\Data_about_deseases\Heart_data\diabetes.sav', 'rb'))
 diabetes_model = pickle.load(open(
-    'C:\\Users\\Shoban\\Desktop\\Virtual_Doctor_Project\\Data_about_deseases\\Heart_data\\Save models\\diabetes.sav',
+    'diabetes.sav',
     'rb'))
 
 # heart_disease_model = pickle.load(open('C:\Users\Shoban\Desktop\Virtual_Doctor_Project\Data_about_deseases\Heart_data\heart.sav','rb'))
 heart_model = pickle.load(open(
-    'C:\\Users\\Shoban\\Desktop\\Virtual_Doctor_Project\\Data_about_deseases\\Heart_data\\\\Save models\\heart2.sav',
+    'heart2.sav',
     'rb'))
 # parkinsons_model = pickle.load(open('C:\Users\Shoban\Desktop\Virtual_Doctor_Project\Data_about_deseases\Heart_data\parkinson.sav', 'rb'))
 
 parkinson_model = pickle.load(open(
-    'C:\\Users\\Shoban\\Desktop\\Virtual_Doctor_Project\\Data_about_deseases\\Heart_data\\\\Save models\\parkinson.sav',
+    'parkinson.sav',
     'rb'))
 
 covid_model = pickle.load(open(
-    'C:\\Users\\Shoban\\Desktop\\Virtual_Doctor_Project\\Data_about_deseases\\Heart_data\\\\Save models\\covid.sav',
+    'covid.sav',
     'rb'))
 
 # Load the trained pneumonia detection model
-pneumonia_model = keras.models.load_model("C:\\Users\\Shoban\\Desktop\\testing\\pneumonia_detection_model.h5")
+pneumonia_model = keras.models.load_model("pneumonia_detection_model.h5")
 
 # sidebar for navigation
 with st.sidebar:
